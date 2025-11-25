@@ -1,25 +1,141 @@
 # 사이트 기본 정보
 title: 안드로이드 개발 블로그
+subtitle: 안드로이드 개발자의 성장 일기
+name: 감자세상
 description: 안드로이드 개발자가 되기 위한 개인 블로그 입니다.
-author: 감자세상
-email: azurealstn@naver.com
-
-# 블로그 URL 설정
 url: "https://azurealstn.github.io"
 baseurl: ""
+repository: "azurealstn/azurealstn.github.io"
 
-# 테마 선택
-remote_theme: pages-themes/midnight@v0.2.0
+# 테마
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+
+# 다크 테마 스킨
+# "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark"
+
+# 로케일
+locale: "ko-KR"
+timezone: Asia/Seoul
+
+# 작성자 정보
+author:
+  name: "감자세상"
+  avatar: "/assets/images/avatar.jpg" # 선택사항 (나중에 이미지 업로드)
+  bio: "안드로이드 개발자를 꿈꾸는 개발자 🚀"
+  location: "Seoul, Korea"
+  email: "azurealstn@naver.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:azurealstn@naver.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/azurealstn"
+    # 필요한 경우 추가
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/yourname"
+
+# 사이트 푸터
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/azurealstn"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:azurealstn@naver.com"
 
 # 빌드 설정
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# 마크다운 설정
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# 플러그인
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-include-cache
   - jekyll-remote-theme
 
-# 추가 설정
-show_downloads: false
+# 페이지네이션
+paginate: 5
+paginate_path: /page:num/
 
-# 포스트 설정
-permalink: /:year/:month/:day/:title/
+# 검색 기능 활성화
+search: true
+search_full_content: true
+search_provider: lunr
+
+# 댓글 기능 (Utterances 사용 - GitHub Issues 기반)
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-dark"
+    issue_term: "pathname"
+    repo: "azurealstn/azurealstn.github.io"
+
+# 소셜 공유 버튼
+og_image: /assets/images/site-logo.png # 선택사항
+
+# Analytics (나중에 설정)
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "UA-XXXXXXXXX-X"
+#     anonymize_ip: false
+
+# 기본값 설정 (중요!)
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      toc: true
+      toc_sticky: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# 카테고리 및 태그
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML 압축
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
