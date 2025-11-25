@@ -17,3 +17,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+
+# 추가 설정
+show_downloads: false
+
+# 포스트 설정
+permalink: /:year/:month/:day/:title/
