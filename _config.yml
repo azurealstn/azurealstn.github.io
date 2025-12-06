@@ -1,8 +1,8 @@
 # 사이트 기본 정보
-title: 안드로이드 개발 블로그
-subtitle: 안드로이드 개발자의 성장 일기
-name: 감자세상
-description: 안드로이드 개발자가 되기 위한 개인 블로그 입니다.
+title: 나의 IT Wiki 모음
+subtitle: 개발 성장 일기
+name: 후라이팬
+description: 공부한 내용을 기록하고 참고하기 위한 나만의 블로그
 url: "https://azurealstn.github.io"
 baseurl: ""
 repository: "azurealstn/azurealstn.github.io"
@@ -20,11 +20,11 @@ timezone: Asia/Seoul
 
 # 작성자 정보
 author:
-  name: "감자세상"
+  name: "후라이팬"
   avatar: "/assets/images/avatar.jpg" # 선택사항 (나중에 이미지 업로드)
-  bio: "안드로이드 개발자를 꿈꾸는 개발자 🚀"
+  bio: "Flying"
   location: "Seoul, Korea"
-  email: "azurealstn@naver.com"
+  # email: "azurealstn@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
