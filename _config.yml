@@ -1,7 +1,7 @@
 # 사이트 기본 정보
 title: 나의 IT Wiki 모음
 subtitle: 개발 성장 일기
-name: 후라이팬
+name: 플라이팬
 description: 공부한 내용을 기록하고 참고하기 위한 나만의 블로그
 url: "https://azurealstn.github.io"
 baseurl: ""
@@ -20,9 +20,9 @@ timezone: Asia/Seoul
 
 # 작성자 정보
 author:
-  name: "후라이팬"
+  name: "플라이팬"
   avatar: "/assets/images/avatar.jpg" # 선택사항 (나중에 이미지 업로드)
-  bio: "Flying"
+  bio: "Flying Pan"
   location: "Seoul, Korea"
   # email: "azurealstn@naver.com"
   links:
