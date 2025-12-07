@@ -13,6 +13,8 @@ remote_theme: mmistakes/minimal-mistakes@4.24.0
 # 다크 테마 스킨
 # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 minimal_mistakes_skin: "dark"
+type_size:
+  base: 16px
 
 # 로케일
 locale: "ko-KR"
